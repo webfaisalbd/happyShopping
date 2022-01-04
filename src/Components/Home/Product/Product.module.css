@@ -3,6 +3,10 @@
     padding-bottom: 7px;
 }
 
+.iconColor{
+    color: gold;
+}
+
 .btnRegular{
     background-color: goldenrod;
     width: 150px;
