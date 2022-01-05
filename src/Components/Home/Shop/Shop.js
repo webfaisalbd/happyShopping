@@ -5,6 +5,7 @@ import { addToDb, getStoredCart } from "../../../utilities/fakedb"
 import style from "./Shop.module.css"
 import Header from '../Header/Header';
 import logo from "../../../images/shoppingCart.png"
+import Banner from '../Banner/Banner';
 
 
 const Shop = () => {
@@ -53,22 +54,23 @@ const Shop = () => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="#"><img src={logo} alt="" width="300" height="65" className="d-inline-block align-text-top" /></a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div className={`${style.searchContainer} col-md-6`}>
-                            <input type="text"
-                                onChange={handleSearch} placeholder='  Search' />
-                        </div>
+            <div>
+                <nav className="navbar navbar-expand-lg">
+                    <div className="container-fluid">
+                        <a className="navbar-brand" href="#"><img src={logo} alt="" width="300" height="65" className="d-inline-block align-text-top" /></a>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div className={`${style.searchContainer} col-md-6`}>
+                                <input type="text"
+                                    onChange={handleSearch} placeholder='  Search' />
+                            </div>
 
+                        </div>
                     </div>
-                </div>
-            </nav>
-            {/* <div className="">
+                </nav>
+                {/* <div className="">
                 <div className="row">
                     <div className="col-md-6">
                         <img src={logo} alt="" width="200" height="65" className={style.logo} />
@@ -79,7 +81,9 @@ const Shop = () => {
                     </div>
                 </div>
             </div> */}
-            <Header></Header>
+                <Header></Header>
+                <Banner></Banner>
+            </div>
             <div className={style.shopContainer}>
                 <div className={style.productContainer}>
 
@@ -97,9 +101,9 @@ const Shop = () => {
 
 
 
-                <div className={style.cartContainer}>
+                {/* <div className={style.cartContainer}>
                     <Cart cart={cart}></Cart>
-                </div>
+                </div> */}
             </div>
         </>
     );

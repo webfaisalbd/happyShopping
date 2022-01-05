@@ -11,7 +11,7 @@ const Product = (props) => {
     const element = <FontAwesomeIcon icon={faShoppingCart} />
 
     return (
-        <div className={`${style.underline} col-md-4 col-sm-6`}
+        <div className={`${style.underline} col-lg-3 col-md-4 col-sm-6`}
         >
             <div>
                 <img src={img} alt='' />
