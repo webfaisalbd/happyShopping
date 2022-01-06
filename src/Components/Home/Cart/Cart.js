@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Cart = (props) => {
     const { cart } = props;
@@ -24,6 +25,9 @@ const Cart = (props) => {
             <p>shipping {shipping}</p>
             <p>tax {tax.toFixed(2)}</p>
             <p>GrandTotal {grandTotal.toFixed(2)}</p>
+            <button>
+            <NavLink className="nav-link" to="/pay">Payment</NavLink>
+            </button>
         </div>
     );
 };

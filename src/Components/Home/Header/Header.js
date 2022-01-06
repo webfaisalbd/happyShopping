@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
 import style from "./Header.module.css"
 const Header = () => {
-    const {user,logOut} = useFirebase();
+    const {user,logOut} = useAuth();
     return (
         <div className={style.header}>
             {/* <img className={style.logo} src={logo} alt="" />
@@ -29,6 +29,11 @@ const Header = () => {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/OrderReview">Order Review</NavLink>
                             </li>
+                            {
+                                user.email && <li className="nav-item">
+                                {user.displayName}
+                           </li>
+                            }
                             {
                                 user.email ? <button onClick={logOut}>Log Out</button> 
                                 :
