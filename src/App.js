@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import NotFound from './Components/Home/NotFound/NotFound';
 import OrderReview from './Components/Home/OrderReview/OrderReview';
+import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
 
 function App() {
   return (
@@ -25,6 +27,12 @@ function App() {
           </Route>
           <Route path="/OrderReview">
             <OrderReview></OrderReview>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
