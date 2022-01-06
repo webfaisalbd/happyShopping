@@ -6,7 +6,7 @@ import Rating from 'react-rating';
 
 
 const Product = (props) => {
-    console.log(props);
+    
     const { name, img, seller, price, stock, star } = props.product;
     const element = <FontAwesomeIcon icon={faShoppingCart} />
 
