@@ -13,6 +13,7 @@ import Register from './Components/Register/Register';
 import AuthProvider from './context/AuthProvider';
 import Pay from './Components/Home/Pay/Pay';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Shipping from './Components/Home/Shipping/Shipping';
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
   </Route>
   <PrivateRoute path="/pay">
     <Pay></Pay>
+  </PrivateRoute>
+  <PrivateRoute path="/shipping">
+    <Shipping></Shipping>
   </PrivateRoute>
   <Route path="*">
     <NotFound></NotFound>

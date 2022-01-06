@@ -26,7 +26,7 @@ const Cart = (props) => {
             <p>tax {tax.toFixed(2)}</p>
             <p>GrandTotal {grandTotal.toFixed(2)}</p>
             <button>
-            <NavLink className="nav-link" to="/pay">Payment</NavLink>
+            <NavLink className="nav-link" to="/shipping">Proceed to Shipping</NavLink>
             </button>
         </div>
     );
