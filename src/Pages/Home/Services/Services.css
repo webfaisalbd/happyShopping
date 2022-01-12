@@ -1,0 +1,26 @@
+.searchContainer{
+    background-color: goldenrod;
+    text-align: center;
+    line-height: 60px;
+}
+
+.searchContainer input{
+    width: 50%;
+    height: 30px;
+    padding: 10px;
+}
+
+.pagination{
+    margin: 60px;
+    
+}
+.pagination button{
+    padding: 0 20px;
+    margin-right: 20px;
+
+}
+.pagination .selected{
+    background-color: rgb(67, 67, 241);
+    color: white;
+
+}
