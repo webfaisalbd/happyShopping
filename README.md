@@ -1,14 +1,11 @@
-
 # Project Name :  Happy Shopping
-Project Live Site -  https://Happy Shopping-mern.web.app/
+Project Live Site -  https://happy-shopping-ec9b8.web.app/
 
 ## Purpose : 
-Happy Shopping is a company where they provide chefs in any sensational events/programs like Engagement, Turmeric Ceremony, Mehendi Nights, and Wedding Ceremony; Birthday Party, Photography, Marriage Anniversary, and Baby Shower festivals; and Employees Meeting  for best quality cooking food and that is low cost.
+Happy Shopping is an ecommerce website where people buy physical goods, services, and digital products over the internet rather than at a brick-and-mortar location in the most cost and time effective way.
 
-We communicate with clients to know their specific needs and deliver the best quality chefs.
-We consider all kinds of people like vegetarian, non vegetarian etc.
+We take order and give them on time with full of responsibilities. In this pandemic situation, ecommerce becomes to much popular now a days.
 
-Being a competitive industry, consistent delivery of results and excellence in the event organizer’s performance is our main goal.
 
 
 
